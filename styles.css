@@ -1,0 +1,635 @@
+body {
+  margin: 0;
+  height: 100vh;
+  color: #000;
+  font-family: "Parisienne";
+  background-color: #cfa4a67c;
+}
+
+p {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+h1 {
+  margin: 0px;
+  margin: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #801f24;
+}
+
+.container {
+  margin: 0px 5%;
+  height: auto;
+}
+
+/*hieronder staat css voor menupage */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(228, 228, 228, 0.6);
+}
+
+/*hieronder staat css voor homepage header*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  background-image: url(./img/Header\ achtergrond.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hamburger-icon {
+  width: 56px;
+  height: 50px;
+  margin: 25px 25px;
+  border: 2px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  padding-top: 8px;
+  background-color: rgb(228, 228, 228, 0.8);
+}
+
+.hamburger-icon div {
+  width: 35px;
+  height: 7px;
+  background-color: black;
+  margin: 6px auto;
+  border-radius: 5px;
+}
+
+.hamburger-icon:hover,
+.home-icon:hover {
+  border: 2px solid #801f24;
+}
+
+header img {
+  margin: 5px auto;
+  width: 75px;
+  height: auto;
+  border-radius: 7px;
+}
+
+.home-icon {
+  width: 56px;
+  height: 58px;
+  margin: 25px 25px;
+  border: 2px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  background-color: rgb(228, 228, 228, 0.8);
+  object-fit: cover;
+}
+
+.navbar {
+  display: none;
+}
+
+/*hieronder staat css voor homepage welkomstekst+fotos*/
+.welkomsttekst {
+  text-align: center;
+  margin: 10px 0px 20px;
+}
+
+.welkomsttekst h1 {
+  line-height: 90%;
+}
+.welkomsttekst span {
+  margin: 20px 0px -5px 0px;
+  font-size: 80%;
+}
+
+.impressiefotos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.impressiefotos img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.impressiefoto_topbar,
+.impressiefoto_bottombar {
+  height: 10px;
+  width: 100%;
+  background-color: #ffffff94;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+/*hieronder staat css voor homepage workshops*/
+.workshops {
+  height: auto;
+  padding: 0px 10px;
+  border: 2px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  background-color: #ffffff94;
+}
+
+.workshops:hover {
+  border: 2px solid #801f24;
+  color: #801f24;
+}
+
+.workshops img {
+  height: 75%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(228, 228, 228);
+}
+
+.workshop-cat {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  margin-bottom: 25px;
+  width: auto;
+  gap: 10px;
+}
+
+.knutselen {
+  border-radius: 10px;
+  width: 33%;
+}
+
+.verven {
+  border-radius: 10px;
+  width: 33%;
+}
+
+.naaien {
+  border-radius: 10px;
+  width: 33%;
+}
+/*hieronder staat css voor webpage workshops*/
+.workshop-pag {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.workshop-pag-intro {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: inside;
+}
+
+.workshop-pag-knutselbackground {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/knutselen1.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+
+.workshop-pag-knutselen {
+  width: 75%;
+  height: 80%;
+  border: 2px solid #cfa4a67c;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto;
+  background-color: #ffffffcc;
+  margin: 10px auto;
+}
+
+.workshop-pag-vervenbackground {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/verven2.jpg);
+  background-size: cover;
+  background-position-y: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+
+.workshop-pag-verven {
+  width: 75%;
+  height: 80%;
+  border: 2px solid #cfa4a67c;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  background-color: #ffffffcc;
+  margin: 10px auto;
+}
+
+.workshop-pag-naaienbackground {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/naaien2.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  padding: 10px 0px;
+}
+
+.workshop-pag-naaien {
+  width: 75%;
+  height: 80%;
+  border: 2px solid #cfa4a67c;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  background-color: #ffffffcc;
+  margin: 10px auto;
+}
+
+/*hieronder staat css voor homepage goede-doelen*/
+.goede-doelen {
+  text-align: center;
+  border: 2px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff94;
+}
+
+.goede-doelen:hover {
+  border: 2px solid #801f24;
+}
+
+.droomdeken-updatebox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.droomdeken-update1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 90%;
+  border: 2px solid #cfa4a67c;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+}
+
+.droomdeken-update1 h2 {
+  width: 100%;
+}
+
+.droomdeken-update1 img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid #c57e80;
+  border-radius: 20px 2px;
+  margin: 20px 10px;
+}
+
+.droomdeken-update1 p {
+  width: 60%;
+}
+
+.droomdeken-update1:hover {
+  border: 2px solid #801f24;
+}
+
+/*hieronder staat css voor webpage Goede Doelen*/
+
+.goededoelen-welkomsttekst {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.goededoelen-welkomsttekst h1 {
+  margin-bottom: 10px;
+}
+
+.goededoelen-pag-droomdekenstekst {
+  text-align: center;
+  margin: 20px 0px 10px 0px;
+}
+
+.droomdeken-video {
+  margin-top: 20px;
+}
+
+.goededoelen-pag-droomdekens-container {
+  height: 100%;
+  display: grid;
+  grid-template: repeat(3, 150px) / repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.goededoelen-pag-droomdekens-container p {
+  text-align: center;
+  color: #fff;
+  margin-top: 120px;
+}
+
+.goededoelen-pag-DD763 {
+  grid-column: 1;
+  grid-row: 1;
+  background-image: url(./img/Droomdekens/Droomdeken\ N763.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+.goededoelen-pag-DD763:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD758 {
+  grid-column: 2;
+  grid-row: 1;
+  background-image: url(./img/Droomdekens/Droomdeken\ N758.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD758:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD536 {
+  grid-column: 3;
+  grid-row: 1;
+  background-image: url(./img/Droomdekens/Droomdeken\ N536.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD536:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD535 {
+  grid-column: 1;
+  grid-row: 2;
+  background-image: url(./img/Droomdekens/Droomdeken\ N535.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD535:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD533 {
+  grid-column: 2;
+  grid-row: 2;
+  background-image: url(./img/Droomdekens/Droomdeken\ N533.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD533:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD532 {
+  grid-column: 3;
+  grid-row: 2;
+  background-image: url(./img/Droomdekens/Droomdeken\ N532.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD532:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD531 {
+  grid-column: 1;
+  grid-row: 3;
+  background-image: url(./img/Droomdekens/Droomdeken\ N531.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD531:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD530 {
+  grid-column: 2;
+  grid-row: 3;
+  background-image: url(./img/Droomdekens/Droomdeken\ N530.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD530:hover {
+  border: 2px solid #801f24;
+}
+
+.goededoelen-pag-DD529 {
+  grid-column: 3;
+  grid-row: 3;
+  background-image: url(./img/Droomdekens/Droomdeken\ N529.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.goededoelen-pag-DD529:hover {
+  border: 2px solid #801f24;
+}
+
+/*hieronder staat css voor homepage even-voorstellen*/
+.even-voorstellen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 2px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0px 0px 20px 0px;
+  background-color: #ffffff94;
+}
+
+.even-voorstellen .tekst {
+  width: 60%;
+  text-align: center;
+  margin: auto 20px;
+  margin-left: 20px;
+}
+
+.img-jannynagelhout {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px 0px;
+  background-image: url(./img/janny\ nagelhout.jpg);
+  background-size: cover;
+}
+
+.even-voorstellen:hover {
+  border: 2px solid #801f24;
+}
+/*hieronder staat css voor webpage even-voorstellen*/
+
+.even-voorstellen-welkomsttekst {
+  text-align: center;
+  margin-top: 20px;
+}
+.even-voorstellen-welkomsttekst h1 {
+  margin-bottom: 20px;
+}
+
+.even-voorstellen-pag-img {
+  width: 300px;
+  height: 300px;
+  background-image: url(./img/janny\ nagelhout.jpg);
+  background-size: cover;
+  margin: 40px auto 110px auto;
+  border-radius: 10px;
+}
+
+/*hieronder staat css voor homepage contact*/
+.contact {
+  text-align: center;
+  border: 2px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  padding: 0px 20px;
+  background-color: #ffffff94;
+  margin-bottom: 20px;
+}
+
+.contact img {
+  width: 200px;
+}
+
+.contact:hover {
+  border: 2px solid #801f24;
+}
+
+/*hieronder staat css voor webpage contact*/
+.contact-pagewrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-welkomsttekst {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+form {
+  font-weight: 700;
+  margin: 2% 5%;
+}
+
+button {
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff94;
+  border: 2px solid rgb(228, 228, 228);
+}
+
+button:hover {
+  border: 2px solid #801f24;
+}
+
+/*hieronder staat css voor homepage footer*/
+footer {
+  background-image: url(./img/Header\ achtergrond.jpg);
+  background-size: 90%;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: auto;
+  padding: 5px 0px;
+  width: 250px;
+  border: 1px solid rgb(228, 228, 228);
+  background-color: rgb(228, 228, 228, 0.8);
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+/* this section is for determine resizing template for media usage*/
+@media screen and (min-width: 768px) {
+  /* hieronder staat css voor index page*/
+  .container {
+    margin: 0px 10%;
+    font-size: 1.2em;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .droomdeken-update1 img {
+    width: 150px;
+    height: 150px;
+  }
+  .droomdeken-update1 p {
+    width: 52%;
+  }
+  .even-voorstellen h1 {
+    width: 800px;
+  }
+  /* hieronder staat css voor workshop page*/
+  .workshop-pag {
+    margin: 0px 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* hieronder staat css voor index page */
+
+  .container {
+    margin: 0px 20%;
+    font-size: 1.4em;
+  }
+
+  header {
+    background-size: 50%;
+  }
+  header img {
+    width: 125px;
+  }
+
+  .hamburger-icon,
+  .home-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 22%;
+    font-size: 1.4em;
+    font-weight: 700;
+    background-color: rgb(228, 228, 228, 0.6);
+    border-top: 2px solid #801f24;
+    border-bottom: 2px solid #801f24;
+  }
+
+  /* hieronder staat css voor workshop page*/
+  .workshop-pag {
+    margin: 0px 20%;
+  }
+}

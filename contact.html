@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>De Olde Boerenkeuken</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+            </style>
+    </head>
+ <body>
+    
+        <header>
+            <a class="hamburger-icon" href="#">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <img src="./img/logoklein.jpg" alt="logo van de olde boerenkeuken"> 
+            <a  href="index.html"><img class="home-icon" src="./img/home.png">
+            </a>       
+        </header><!--einde header-->
+
+        <nav class="navbar">
+            <a href="index.html"><div class="nav-home">Home</div></a>
+            <a href="workshops.html"><div class="nav-workshops">Workshops</div></a>
+            <a href="goede_doelen.html"><div class="nav-goededoelen">Goede Doelen</div></a>
+            <a href="even_voorstellen.html"><div class="nav-evenvoorstellen">Even Voorstellen</div></a>
+            <a href="contact.html"><div class="nav-contact">Contact</div></a>
+        </nav><!--einde nav-->
+
+    <div class="container">
+        <main>
+            <div class="contact-pagewrapper">
+                <div class="contact-welkomsttekst">
+                    <h1>Contact</h1>
+                    <p>Stap eens over de drempel,
+                    even terug in de tijd en u ervaart                
+                    de oud hollandse gezelligheid!</p><br>
+                    <abbr><strong>Janny Nagelhout</strong></abbr><br><br>
+                    <p>Voor meer informatie kunt u mailen, onderstaand contactformulier 
+                        invullen of telefonisch contact opnemen via Tel. 0561 - 44 18 14
+                    </p>
+                </div>
+                <form class="formulier" name="contact" method="POST" data-netlify="true">
+                    <div>
+                        <label for="naam">Naam *</label>
+                        <input type="text" name="naam" required /> 
+                    </div><br>
+                    <div>
+                        <label for="email">E-mail *</label>
+                        <input type="email" name="email" required /> 
+                    </div><br>
+                    <div>
+                        <label for="bestand">Bestand uploaden</label>
+                        <input type="file" name="bestand"/> 
+                    </div><br>
+                    <div>
+                        <label>Bericht</label><br>
+                        <textarea rows="15" cols="50">
+                        </textarea>
+                    </div>
+                    <button type="submit">Verzenden</button>
+                    <button type="reset">Alles wissen</button>
+                </form>
+            </div>
+        </main><!--einde main-->
+     </div><!--einde container-->
+    <footer>
+        <p>All right are blablal<br>
+            ball lbla R. Nagelhout<br>
+            *2022*
+        </p>
+    </footer><!--einde footer-->
+ </body>
+</html>
